@@ -1,0 +1,266 @@
+/* rest */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+
+/* utility classes 公共样式(通用类)*/
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-primary {
+    color: #93cb52;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333333;
+    color: #ffffff;
+}
+
+.bg-primary {
+    background: #93cd52;
+    color: #ffffff;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #93cd52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-dark {
+    background: #333333;
+    color: #ffffff;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #444444;
+}
+
+.btn:hover {
+    background: #7ab436;
+}
+
+
+/* navBar */
+
+
+/* sticky 粘性定位，结合了固定定位和相对定位，当元素触碰到特性的阈值的时候就会触发，此处阈值是top:0,安卓系统对粘性定位兼容不友好 */
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* 16px */
+    padding: 1rem;
+}
+
+#navBar ul {
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    align-items: center;
+}
+
+#navBar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem
+}
+
+#navBar ul li a:hover {
+    background-color: #93cb52;
+    border-radius: 5px;
+}
+
+
+/* header:home */
+
+#home {
+    background: url("../img/home.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: #ffffff;
+    position: relative;
+}
+
+#home .home-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* section:what we do*/
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+/* section:who we are */
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+    flex-basis: 50%;
+}
+
+#who .who-img {
+    background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+
+/* section:clients */
+
+#clients .items {
+    display: flex;
+    justify-content: center;
+}
+
+#clients .items img {
+    display: block;
+    margin: 0 auto;
+    width: 60%
+}
+
+
+/* section:contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .contact-form,
+#contact .contact-img {
+    flex: 1;
+}
+
+#contact .contact-img {
+    background: url("../img/contect2.jpg") no-repeat center center/cover;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form textarea,
+#contact .contact-form input {
+    width: 100%;
+    padding: 0.5rem;
+}
